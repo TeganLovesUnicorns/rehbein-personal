@@ -28,8 +28,10 @@ class HomeSlider extends React.Component {
    return (
      <ImageGallery
        items={images}
-       slideInterval={3000}
-       onImageLoad={this.handleImageLoad}/>
+       slideInterval={5000}
+       onImageLoad={this.handleImageLoad}
+       autoPlay={true}
+       />
    );
  }
 
