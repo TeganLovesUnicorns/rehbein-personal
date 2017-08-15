@@ -4,16 +4,20 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "html-webpack-plugin": "^2.30.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-image-gallery": "^0.8.3",
     "react-image-slider": "^0.1.0",
-    "react-scripts": "1.0.11"
+    "react-scripts": "1.0.11",
+    "webpack": "^3.5.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "webpack-dev-server --open"
+    
   }
 }
