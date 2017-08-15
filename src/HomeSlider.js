@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
+require('./Slider.css');
 
 class HomeSlider extends React.Component {
 
@@ -27,7 +28,7 @@ class HomeSlider extends React.Component {
    return (
      <ImageGallery
        items={images}
-       slideInterval={2000}
+       slideInterval={3000}
        onImageLoad={this.handleImageLoad}/>
    );
  }
