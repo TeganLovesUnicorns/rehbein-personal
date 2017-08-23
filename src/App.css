@@ -1,15 +1,3 @@
-
-/* # SCSS */
-/* @import "~react-image-gallery/styles/scss/image-gallery.scss"; */
-
-/* # CSS */
-/* @import "~react-image-gallery/styles/css/image-gallery.css"; */
-
-/* # Stylesheet with no icons */
-/* @import "node_modules/react-image-gallery/styles/scss/image-gallery-no-icon.scss"; */
-/* @import "node_modules/react-image-gallery/styles/css/image-gallery-no-icon.css" */
-
-
 .App {
   text-align: center;
 }

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
 require('./Slider.css');
 
+var imgLocation
+
 class HomeSlider extends React.Component {
 
  handleImageLoad(event) {
@@ -12,23 +14,25 @@ class HomeSlider extends React.Component {
 
    const images = [
      {
-       original: 'http://lorempixel.com/1000/600/nature/1/',
-       thumbnail: 'http://lorempixel.com/250/150/nature/1/',
+       original: '/img/homeslider/1.jpg',
+       thumbnail: '/img/homeslider/thumb/1.jpg',
+       description: 'Amos Lee Summer 2017'
      },
      {
-       original: 'http://lorempixel.com/1000/600/nature/2/',
-       thumbnail: 'http://lorempixel.com/250/150/nature/2/'
+       original: '/img/homeslider/2.jpg',
+       thumbnail: '/img/homeslider/thumb/2.jpg'
      },
      {
-       original: 'http://lorempixel.com/1000/600/nature/3/',
-       thumbnail: 'http://lorempixel.com/250/150/nature/3/'
+      original: '/img/homeslider/3.jpg',
+      thumbnail: '/img/homeslider/thumb/3.jpg',
+      description: 'Amos Lee Spring 2017'
      }
    ]
 
    return (
      <ImageGallery
        items={images}
-       slideInterval={5000}
+       slideInterval={10000}
        onImageLoad={this.handleImageLoad}
        autoPlay={true}
        />
