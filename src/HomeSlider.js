@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
 require('./Slider.css');
 
-var imgLocation
 
-class HomeSlider extends React.Component {
+// imgLoc is file path to image folder of non compiled site.
+var imgLoc = '/img/homeslider/';
+
+class HomeSlider extends Component {
 
  handleImageLoad(event) {
    console.log('Image loaded ', event.target)
@@ -14,17 +16,17 @@ class HomeSlider extends React.Component {
 
    const images = [
      {
-       original: '/img/homeslider/1.jpg',
-       thumbnail: '/img/homeslider/thumb/1.jpg',
+       original: imgLoc + '1.jpg',
+       thumbnail: imgLoc + 'thumb/1.jpg',
        description: 'Amos Lee Summer 2017'
      },
      {
-       original: '/img/homeslider/2.jpg',
-       thumbnail: '/img/homeslider/thumb/2.jpg'
+       original: imgLoc + '2.jpg',
+       thumbnail: imgLoc + 'thumb/2.jpg'
      },
      {
-      original: '/img/homeslider/3.jpg',
-      thumbnail: '/img/homeslider/thumb/3.jpg',
+      original: imgLoc + '3.jpg',
+      thumbnail: imgLoc + 'thumb/3.jpg',
       description: 'Amos Lee Spring 2017'
      }
    ]
@@ -35,6 +37,9 @@ class HomeSlider extends React.Component {
        slideInterval={10000}
        onImageLoad={this.handleImageLoad}
        autoPlay={true}
+       showThumbnails={false}
+       showBullets={true}
+
        />
    );
  }
