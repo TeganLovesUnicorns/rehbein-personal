@@ -27,6 +27,27 @@ header h2 {
   font-size: 1rem;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+}
+
+.pages ul {
+  padding: 0px;
+}
+
+.pages li {
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style-type: none;
+}
+
 
 /**************************/
 /********* Queries ********/
